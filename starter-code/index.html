@@ -13,7 +13,7 @@
 	<ul>
 		<li ng-repeat="character in controller.characters" ng-class="{redText: controller.showZoidberg}">{{character.name}}</li>
 	</ul>
-	<h4>I made {{controller.money | currency}} last year.  It's all about the Washingtons, baby!</h4>
+	<h4>I made {{controller.money | currency:USD:true}} last year.  It's all about the Washingtons, baby!</h4>
 	<div>
 		<button ng-click="controller.woopWoopWoop()">Lobster Doctor</button>
 	</div>
